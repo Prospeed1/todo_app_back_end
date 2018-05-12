@@ -1,15 +1,70 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+html {
+    font-family: sans-serif;
+}
+.pomodoro-estimate{
+  font-weight: bold;
+  color: #F44336;
+  background-color: #F5F5F5;
+  border-radius: 50px;
+  font-size: 14px;
+  padding: 5px 10px 5px 10px;
+}
+#add-new-todo-button {
+  font-size: 25px;
+  text-align: center;
+  color: #FFF;
+  outline: none;
+  border-style: none;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 1px #90A4AE;
+  display: block;
+  background-color: #03A9F4;
+  margin-top: 10px;
+}
+#add-new-todo-button:active{
+  box-shadow: 1px 1px 1px #90A4AE;
+}
+li{
+  padding: 5px;
+  margin-bottom:10px;
+}
+
+h2{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 32px;
+  margin: 20px 0px;
+}
+.checkbox{
+    width:50px;
+    color: rgb(50,50,90)
+}
+
+.delete{
+  display: inline-block;
+  padding:10px;
+  background-color: rgb(255,0,0);
+  text-align:center;
+  box-shadow: 2px 2px 1px #90A4AE;
+  
+  
+}
+.edit{
+  display: inline-block;
+  padding:10px;
+  background-color: blue;
+  text-align:center;
+  box-shadow: 2px 2px 1px #90A4AE;
+}
+.go{
+  display: inline-block;
+  padding:10px;
+  background-color: green;
+  text-align:center;
+  box-shadow: 2px 2px 1px #90A4AE;
+}
+a:active {
+  color:white;
+    
+}
