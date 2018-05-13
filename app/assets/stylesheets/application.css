@@ -5,6 +5,10 @@ a:active {
   color:white;
     
 }
+a .noColor{
+  text-decoration:none;
+  color:red;
+}
 li{
   padding: 5px;
   margin-bottom:10px;
@@ -66,10 +70,12 @@ p {
   box-shadow: 2px 2px 1px #90A4AE;
 }
 .go{
+  font-size: 25px;
+  text-align: center;
+  color: #FFF;
   display: inline-block;
   padding:10px;
   background-color: green;
-  text-align:center;
   box-shadow: 2px 2px 1px #90A4AE;
 }
 
