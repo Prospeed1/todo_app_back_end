@@ -1,3 +1,4 @@
+    <div class = "container2">
     <form method ="post" action="/todo/new">
         <input class="input" type="text" name="description" placeholder="Add a new todo...">
         <input class="input" type="number" name="pomodoro_estimate" placeholder= "Pomodoro estimate...">
@@ -5,3 +6,4 @@
         <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
         <a href="/todo/index" class="go" class="link">Go back...</a>
     </form>
+    </div>
