@@ -5,7 +5,7 @@ a:active {
   color:white;
     
 }
-a .noColor{
+.noColor {
   text-decoration:none;
   color:red;
 }
@@ -59,6 +59,7 @@ p {
   background-color: rgb(255,0,0);
   text-align:center;
   box-shadow: 2px 2px 1px #90A4AE;
+  color:white;
   
   
 }
@@ -68,15 +69,17 @@ p {
   background-color: blue;
   text-align:center;
   box-shadow: 2px 2px 1px #90A4AE;
+  color:white;
 }
 .go{
   font-size: 25px;
   text-align: center;
-  color: #FFF;
+  color: white;
   display: inline-block;
   padding:10px;
   background-color: green;
   box-shadow: 2px 2px 1px #90A4AE;
+  
 }
 
 .input {
@@ -89,5 +92,8 @@ p {
 }
 .container {
   background-color:green;
+  text-align: center;
   
 }
+
+
