@@ -1,13 +1,17 @@
-<div class="container">
+<div class="container2">
     <h1 id = "List">Workshop Todo List</h1>
         <ul>
         <% @todos.each do |todo| %>
         <li>
-            <input type="checkbox"/>
+            <label class="container">
+            <input type="checkbox"/ checked="checked">
             <a href = "/todo/show/<%= todo.id %>"><%= todo.description %></a>
             <span class="pomodoro-estimate"><%= todo.pomodoro_estimate %> pomodoro</span>
+            <span class="checkmark"></span>
+            </label>
         </li>
         <% end %>
         </ul>
         <a class="noColor" href="/todo/new/"><input id="add-new-todo-button" type="submit" value="Add todo"/></a>
 </div>
+
