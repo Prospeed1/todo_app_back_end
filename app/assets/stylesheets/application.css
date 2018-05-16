@@ -1,6 +1,7 @@
 html {
     font-family: sans-serif;
 }
+
 a:active {
   color:white;
     
@@ -91,7 +92,7 @@ p {
   /* Gets rid of line under links */
 .noColor {
   text-decoration:none;
-  color:red;
+  
 }
 
 /* container around page */
@@ -104,7 +105,7 @@ p {
  /*CSS necessary for customizable checkbox */
   /* The container */
   .container {
-      display: block;
+      display: inline;
       position: relative;
       padding-left: 35px;
       margin-bottom: 12px;
