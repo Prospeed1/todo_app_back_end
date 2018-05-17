@@ -1,5 +1,11 @@
+  /* Elements */
 html {
     font-family: sans-serif;
+    overflow: hidden;
+    background-color: rgb(250,112,37);
+}
+body {
+  margin: 0px;
 }
 
 a:active {
@@ -9,7 +15,7 @@ a:active {
 
 li{
   padding: 5px;
-  margin-bottom:10px;
+  margin-bottom:15px;
 }
 
 h2{
@@ -21,6 +27,19 @@ h2{
 p {
   font-size:14;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size:14px;
+}
+  /* Index H1 */
+#list {
+  position:relative;
+  top:20px;
+  
+}
+
 .pomodoro-estimate{
   font-weight: bold;
   color: #F44336;
@@ -31,6 +50,7 @@ p {
 } 
  /*Edits button */
 #add-new-todo-button {
+  position:relative;
   font-size: 25px;
   text-align: center;
   color: #FFF;
@@ -41,7 +61,7 @@ p {
   box-shadow: 2px 2px 1px #90A4AE;
   display: block;
   background-color: #03A9F4;
-  margin-top: 10px;
+  top:-30px;
 }
 #add-new-todo-button:active{
   box-shadow: 1px 1px 1px #90A4AE;
@@ -97,8 +117,11 @@ p {
 
 /* container around page */
 .container2 {
+  position:relative;
   background-color:green;
   text-align: center;
+  width:100%;
+  height:100%;
   
 }
  
