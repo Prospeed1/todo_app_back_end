@@ -19,11 +19,10 @@ class TodoController < ApplicationController
         t.save
         redirect_to "/todo/show/#{t.id}"
     end 
-    def delete
-        # Gets number user typed in URL
-        todo_id = params[:id]
-        #Grab the todo with that id from the database
-        @todo = Todo.find_by_id(todo_id)
+    def destroy
+        t = Todo.find_by_id(params[:id])
+        t.destroy
+        redirect_to "/todo/index"
     end
     def edit
         @todo = Todo.find_by_id(params[:id])
