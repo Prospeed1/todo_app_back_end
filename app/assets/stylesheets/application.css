@@ -1,8 +1,7 @@
   /* Elements */
 html {
     font-family: sans-serif;
-    overflow: hidden;
-    background-color: rgb(250,112,37);
+    
 }
 body {
   margin: 0px;
@@ -49,7 +48,7 @@ ul {
   padding: 5px 10px 5px 10px;
 } 
  /*Edits button */
-#add-new-todo-button {
+.add-new-todo-button {
   position:relative;
   font-size: 25px;
   text-align: center;
@@ -63,7 +62,7 @@ ul {
   background-color: #03A9F4;
   top:-30px;
 }
-#add-new-todo-button:active{
+.add-new-todo-button:active{
   box-shadow: 1px 1px 1px #90A4AE;
 }
 

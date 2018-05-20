@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   get 'todo/show/:id' => 'todo#show'
   get 'todo/new' => 'todo#new'
   post 'todo/new' => 'todo#create'
+  delete 'todo/delete/:id'=> 'todo#delete'
+  get 'todo/edit/:id', to: 'todo#edit'
+  get 'todo/update/:id', to: 'todo#update'
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 

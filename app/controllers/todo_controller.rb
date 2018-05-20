@@ -18,5 +18,24 @@ class TodoController < ApplicationController
         t.pomodoro_estimate = params['pomodoro_estimate']
         t.save
         redirect_to "/todo/show/#{t.id}"
-    end    
+    end 
+    def delete
+        # Gets number user typed in URL
+        todo_id = params[:id]
+        #Grab the todo with that id from the database
+        @todo = Todo.find_by_id(todo_id)
+    end
+    def edit
+        @todo = Todo.find_by_id(params[:id])
+    end
+    def update
+        t = Todo.find_by_id(params['id'])
+        t.description = params['description']
+        t.pomodoro_estimate = params['pomodoro-estimate']
+        t.save
+        redirect_to "/todo/show/#{t.id}"
+    end
+
+    
+    
 end
