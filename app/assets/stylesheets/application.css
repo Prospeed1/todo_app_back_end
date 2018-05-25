@@ -13,18 +13,25 @@ a:active {
 }
 
 li{
+  display:block;
   padding: 5px;
-  margin-bottom:15px;
+  margin-bottom:0px;
   border-style: double;
   background-color:rgb(250,105,0) ;
   text-align:center;
+  word-wrap: break-word;
+  overflow: hidden;
+  
+  
 }
 
 h2{
   display: inline-block;
   vertical-align: middle;
+  overflow: hidden;
   font-size: 32px;
   margin: 20px 0px;
+  word-wrap:break-word;
 }
 p {
   font-size:14;
@@ -71,10 +78,17 @@ ul {
 .add-new-todo-button:active{
   box-shadow: 1px 1px 1px #90A4AE;
 }
+.justButtons:active {
+  box-shadow: 1px 1px 1px #90A4AE;
+}
 /* Checkbox*/
 .checkbox{
     width:50px;
     color: rgb(50,50,90)
+}
+/*Makes sure that long todos dont mess up page */
+#Todo-info {
+  display: block;
 }
 
 .delete{
