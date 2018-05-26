@@ -96,6 +96,10 @@ ul {
   padding-left: 20px;
   padding-right: 20px;
 }
+#editDiv {
+  padding-left: 20px;
+  
+}
 
 .delete{
   display: inline-block;
@@ -131,7 +135,7 @@ ul {
 }
 /*Edits input*/
 .input {
-  font-weight: bold;
+  font-weight: bold; 
   color: #F44336;
   background-color: #F5F5F5;
   border-radius: 50px;
