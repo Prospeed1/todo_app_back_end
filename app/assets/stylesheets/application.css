@@ -71,7 +71,7 @@ ul {
   box-shadow: 2px 2px 1px #90A4AE;
   display: inline-block;
   background-color: #03A9F4;
-  top:-10px;
+  top: 1px;
   margin:10px;
 }
 /*Makes button 3D */
@@ -89,6 +89,7 @@ ul {
 /*Makes sure that long todos dont mess up page */
 #Todo-info {
   display: block;
+  padding-left: 10px;
 }
 
 .delete{
@@ -103,7 +104,8 @@ ul {
 }
 .edit{
   display: inline-block;
-  padding:10px;
+  padding: 10px;
+  margin-left: 10px;
   background-color: blue;
   text-align:center;
   box-shadow: 2px 2px 1px #90A4AE;
@@ -144,6 +146,11 @@ ul {
   border-bottom-style: ridge;
   border-top-style: ridge;
   border-width:7px;
+  
+}
+#showCheckbox {
+  left:310px;
+  
   
 }
  
