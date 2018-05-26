@@ -1,9 +1,9 @@
     <div class = "container2">
-    <form method ="post" action="/todo/new">
+    <form method ="post" action="/new">
         <input class="input" type="text" name="description" placeholder="Add a new todo...">
         <input class="input" type="number" name="pomodoro_estimate" placeholder= "Pomodoro estimate...">
         <input class="add-new-todo-button" type="submit" value="Add todo"/>
         <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-        <a href="/todo/index" class="go noColor ">Go back...</a>
+        <a href="/" class="go noColor ">Go back...</a>
     </form>
     </div>

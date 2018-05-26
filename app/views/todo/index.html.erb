@@ -6,14 +6,14 @@
         <li>
             <label class="container">
             <input type="checkbox"/ checked="checked">
-            <a href = "/todo/show/<%= todo.id %>"><%= todo.description %></a>
+            <a href = "/show/<%= todo.id %>"><%= todo.description %></a>
             <span class="pomodoro-estimate"><%= todo.pomodoro_estimate %> pomodoro</span>
             <span class="checkmark"></span>
             </label>
         </li>
         <% end %>
         </ul>
-        <a class="noColor" href="/todo/new/"><input class="add-new-todo-button" type="submit" value="Add todo"/></a>
+        <a class="noColor" href="/new/"><input class="add-new-todo-button" type="submit" value="Add todo"/></a>
 </div>
 </body>
 

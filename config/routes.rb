@@ -6,13 +6,13 @@ Rails.application.routes.draw do
   # root 'welcome#index'
 
   # Example of regular route:
-  get 'todo/index' => 'todo#index'
-  get 'todo/show/:id' => 'todo#show'
-  get 'todo/new' => 'todo#new'
-  post 'todo/new' => 'todo#create'
-  get 'todo/destroy/:id', to: 'todo#destroy'
-  get 'todo/edit/:id', to: 'todo#edit'
-  get 'todo/update/:id', to: 'todo#update'
+  root to: 'todo#index'
+  get '/show/:id' => 'todo#show'
+  get '/new' => 'todo#new'
+  post '/new' => 'todo#create'
+  get '/destroy/:id', to: 'todo#destroy'
+  get '/edit/:id', to: 'todo#edit'
+  get '/update/:id', to: 'todo#update'
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
