@@ -29,7 +29,7 @@ h2{
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  font-size: 32px;
+  font-size: 27.5px;
   margin: 20px 0px;
   word-wrap:break-word;
 }
@@ -60,7 +60,7 @@ ul {
 }
 /* Div around show */
 #showDiv {
-  background-color: rgb(247, 249, 249);
+  background-color: rgb(239,227,155);
 }
  /*Edits button */
 .add-new-todo-button {
@@ -72,7 +72,7 @@ ul {
   border-style: none;
   padding: 10px;
   border-radius: 3px;
-  box-shadow: 2px 2px 1px #90A4AE;
+  box-shadow: 2px 2px 1px #786913;
   display: inline-block;
   background-color: #03A9F4;
   top: 1px;
@@ -80,10 +80,10 @@ ul {
 }
 /*Makes button 3D */
 .add-new-todo-button:active{
-  box-shadow: 1px 1px 1px #90A4AE;
+  box-shadow: 1px 1px 1px #EFE39B;
 }
 .justButtons:active {
-  box-shadow: 1px 1px 1px #90A4AE;
+  box-shadow: 1px 1px 1px #EFE39B;
 }
 /* Checkbox*/
 .checkbox{
@@ -98,7 +98,7 @@ ul {
 }
 #editDiv {
   padding-left: 20px;
-  
+  background-color: rgb(239,227,155);
 }
 
 .delete{
@@ -106,7 +106,7 @@ ul {
   padding:10px;
   background-color: rgb(255,0,0);
   text-align:center;
-  box-shadow: 2px 2px 1px #90A4AE;
+  box-shadow: 2px 2px 1px #786913;
   color:white;
   font-size: 25px;
   
@@ -118,7 +118,7 @@ ul {
   margin-left: 20px;
   background-color: blue;
   text-align:center;
-  box-shadow: 2px 2px 1px #90A4AE;
+  box-shadow: 2px 2px 1px #786913;
   color:white;
   font-size: 25px;
 }
@@ -130,7 +130,7 @@ ul {
   display: inline-block;
   padding:10px;
   background-color: green;
-  box-shadow: 2px 2px 1px #90A4AE;
+  box-shadow: 2px 2px 1px #786913;
   
 }
 /*Edits input*/
@@ -151,20 +151,16 @@ ul {
 /* container around page */
 .container2 {
   position:relative;
-  background-color:rgb(255,255,255);
+  background-color:rgb(239,227,155);
   text-align: center;
   width:100%;
-  height:100%;
+  height:100vh;
   border-bottom-style: ridge;
   border-top-style: ridge;
   border-width:10px;
   
 }
-#showCheckbox {
-  left:330px;
-  
-  
-}
+
  
  /*CSS necessary for customizable checkbox */
   /* The container */
@@ -234,6 +230,27 @@ ul {
       transform: rotate(45deg);
   }
 
+  /* Media Queries for phones and tablets */
+  
+  @media only screen and (min-width: 290px) and (max-width: 640px) and  (-webkit-device-pixel-ratio: 2) { 
+  .container2 {
+  position:relative;
+  background-color:rgb(239,227,155);
+  text-align: center;
+  width:100%;
+  height:100vh;
+  border-bottom-style: ridge;
+  border-top-style: ridge;
+  border-width:10px;
+  
+}
+
+  #list {
+    font-size: 50px;
+  }
+  
+    
+  }
 
 
 
