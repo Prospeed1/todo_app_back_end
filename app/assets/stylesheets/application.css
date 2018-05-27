@@ -32,6 +32,8 @@ h2{
   font-size: 27.5px;
   margin: 20px 0px;
   word-wrap:break-word;
+  text-align: center;
+  
 }
 p {
   font-size:14;
@@ -61,6 +63,7 @@ ul {
 /* Div around show */
 #showDiv {
   background-color: rgb(239,227,155);
+  height: 100vh;
 }
  /*Edits button */
 .add-new-todo-button {
@@ -99,6 +102,7 @@ ul {
 #editDiv {
   padding-left: 20px;
   background-color: rgb(239,227,155);
+  height: 100vh;
 }
 
 .delete{
@@ -135,12 +139,14 @@ ul {
 }
 /*Edits input*/
 .input {
+  display: inline-block;
   font-weight: bold; 
   color: #F44336;
   background-color: #F5F5F5;
   border-radius: 50px;
   font-size: 16px;
   padding: 5px 10px 5px 10px;
+  
 } 
   /* Gets rid of line under links */
 .noColor {
@@ -158,6 +164,7 @@ ul {
   border-bottom-style: ridge;
   border-top-style: ridge;
   border-width:10px;
+  padding-top: 20px;
   
 }
 
@@ -232,7 +239,7 @@ ul {
 
   /* Media Queries for phones and tablets */
   
-  @media only screen and (min-width: 290px) and (max-width: 640px) and  (-webkit-device-pixel-ratio: 2) { 
+  @media only screen and (min-width: 382px) and (max-width: 477px) and  (-webkit-device-pixel-ratio: 2) { 
   .container2 {
   position:relative;
   background-color:rgb(239,227,155);
@@ -248,6 +255,16 @@ ul {
   #list {
     font-size: 50px;
   }
+  .input {
+  display: block;
+  font-weight: bold; 
+  color: #F44336;
+  background-color: #F5F5F5;
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 5px 10px 5px 10px;
+  margin-left: 50px
+}
   
     
   }
