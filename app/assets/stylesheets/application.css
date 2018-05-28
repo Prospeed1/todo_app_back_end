@@ -137,6 +137,10 @@ ul {
   box-shadow: 2px 2px 1px #786913;
   
 }
+#Pomodoro-technique-info {
+  font-size: 25px;
+  word-wrap: break-word;
+}
 /*Edits input*/
 .input {
   display: inline-block;
@@ -165,6 +169,7 @@ ul {
   border-top-style: ridge;
   border-width:10px;
   padding-top: 20px;
+  overflow: auto;
   
 }
 
