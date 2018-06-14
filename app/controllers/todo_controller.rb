@@ -34,6 +34,7 @@ class TodoController < ApplicationController
         t.save
         redirect_to "/show/#{t.id}"
     end
+    
 
     
     
